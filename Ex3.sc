@@ -9,7 +9,7 @@ object Exercise3 {
     case (Nil, _) => list2
     case (_, Nil) => list1
     case (x :: xs, y :: ys) =>
-      if (x >= y)
+      if (x <= y)
         x :: merge(xs, list2)
       else
         y :: merge(list1, ys)
